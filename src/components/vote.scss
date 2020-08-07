@@ -1,0 +1,44 @@
+$primary-color: #f54242;
+$primary-color-darker: #962121;
+$secondary-color: #ffcfcf;
+$animation-button: color 0.2s, background-color 0.2s, transform 0.2s;
+
+.Vote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+h1 {
+    color: tomato;
+}
+
+button {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 1rem;
+    width: 15rem;
+    height: 5rem;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    transition: $animation-button;
+}
+
+button:hover {
+    border-bottom: $primary-color-darker solid 2px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    transition: $animation-button;
+    transform: translateY(-5px);
+}
+
+button:active {
+    background-color: $primary-color-darker;
+    transform: translateY(0.5px);
+    transition: $animation-button;
+}
