@@ -1,6 +1,6 @@
-$primary-color: #f54242;
-$primary-color-darker: #962121;
-$secondary-color: #ffcfcf;
+$primary-color: #555;
+$primary-color-darker: tomato;
+$secondary-color: #777;
 $animation-button: color 0.2s, background-color 0.2s, transform 0.2s;
 
 .Vote {
@@ -17,7 +17,7 @@ h1 {
 
 button {
     background-color: $secondary-color;
-    color: $primary-color;
+    color: $primary-color-darker;
     padding: 1rem;
     width: 15rem;
     height: 5rem;
@@ -32,13 +32,13 @@ button {
 button:hover {
     border-bottom: $primary-color-darker solid 2px;
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $primary-color-darker;
     transition: $animation-button;
     transform: translateY(-5px);
 }
 
 button:active {
-    background-color: $primary-color-darker;
+    background-color: $secondary-color;
     transform: translateY(0.5px);
     transition: $animation-button;
 }
